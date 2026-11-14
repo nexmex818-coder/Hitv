@@ -1,12 +1,12 @@
 workflows:
-ios-workflow:
-name: HiTV iOS Workflow
-max_build_duration: 60
-environment:
-xcode: latest
-scripts:
-- name: Build Preparation
-script: |
-echo "Preparing to build HiTV for iOS"
-artifacts:
-- build/ios/ipa/*.ipa
+  ios-workflow:
+    name: HiTV iOS Workflow
+    max_build_duration: 60
+    environment:
+      xcode: latest
+    scripts:
+      - name: Build Preparation
+        script: |
+          echo "Preparing to build HiTV for iOS"
+    artifacts:
+      - build/ios/ipa/*.ipa
